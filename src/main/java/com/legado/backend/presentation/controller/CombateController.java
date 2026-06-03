@@ -14,7 +14,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {
+    "https://legado-de-valientes-frontend.vercel.app",
+    "http://localhost:3000",
+    "http://localhost:5173"
+})
 @RestController
 @RequestMapping("/api/combates")
 public class CombateController {
